@@ -27,7 +27,7 @@ authentication code of the contact they wished to share.  I scan the
 code and download the contact card, and file it with the cards I share
 with my spouse.
 
-We finish our drinks and head to our respective homes. Once their, my
+We finish our drinks and head to our respective homes. Once there, my
 phone connects to the local network and begins to sync the contact card
 with my laptop, my spouse's laptop, and my spouse's phone.  My laptop
 sees the album and begins to download the whole of it from the tracker.
