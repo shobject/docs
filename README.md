@@ -78,7 +78,7 @@ are in wide-spread use.)
 * Peer-to-peer networking (e.g. [CJDNS](https://github.com/cjdelisle/cjdns), [GNUnet](https://gnunet.org/))
 * Distributed Hash Table (e.g. [BitTorrent](http://www.bittorrent.org/))
 * Authentication and Encryption (e.g.
-  [OpenSSL](https://www.openssl.org/), [NaCL](https://nacl.cr.yp.to/))
+  [OpenSSL](https://www.openssl.org/), [NaCL](https://nacl.cr.yp.to/), [Noise](http://noiseprotocol.org/))
 * Common types of objects predefiend (e.g.
   [Schema.org](http://schema.org/)) and serialization for said common
   types (e.g.
@@ -105,3 +105,4 @@ Initial Outline
 * Command line: Automatically sync contacts over local network on change
 * Android: Calendar provider with manual sync over local network
 * Android: Calendar provider with automatic sync on change
+
