@@ -8,11 +8,38 @@ creating re-usable building blocks to remove the monotony of networking
 code and error handling, as well as having a solid core for the common
 cases to build upon.
 
+Our technological society is becoming increasingly reliant on centralized
+systems who have no obligation to us to properly run their services,
+protect our data, or keep our data private.  One of the many reasons for
+this increase in centralization is that it makes things _easy_.  They're
+easy to use, easy to develop for, and easy to set up. Allowing
+application developers to easily build distributed-first applications,
+those applications themselves will become easy to use and easy to set
+up.
+
+By creating distributed systems, services _could_ arise that allow you
+to sync with them, providing off-site backups and other services for
+those who want them. However, critically, data is not
+
+* locked up in them
+* bound only to a single provider at a single time
+* does not need to reside in an un-encrypted format if desired
+
+
+By building distributed first applications, we're democratising the web
+by empowering individuals to more closely decide how their data is
+stored and cared for, while not also removing the ability for people to
+lean on vendors to help them with tasks they can't and don't want to do.
+
 Sample Vision
 =============
 
-I meet up with a friend at a bar. After chatting, they would like to share
-an always-updating album of baby pictures and the name of their
+I, who am not a tech-geek, meet up with a not-tech-geek friend at a bar.
+Neither of us know what a "Linux" (some kind of HVAC vendor?) is or why
+password security is important ("passw0rd is super-complicated; it's not
+even a word!!!!1!"). We're not dumb, but the intricacies of computer
+just aren't our concern in life.  After chatting, they would like to
+share an always-updating album of baby pictures and the name of their
 pediatrician with me.  We pull out our phones.
 
 They generate a QR-code
