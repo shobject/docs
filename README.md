@@ -9,7 +9,7 @@ code and error handling, as well as having a solid core for the common
 cases to build upon.
 
 Our technological society is becoming increasingly reliant on centralized
-systems who have no obligation to us to properly run their services,
+systems which have no obligation to us to properly run their services,
 protect our data, or keep our data private.  One of the many reasons for
 this increase in centralization is that it makes things _easy_.  They're
 easy to use, easy to develop for, and easy to set up. Allowing
@@ -64,7 +64,7 @@ Shoulders of Giants
 ===================
 
 To do this, `shobject` itself will build upon tried-and-test platforms.
-Part of the inital challenge will be choosing the smallest and most
+Part of the initial challenge will be choosing the smallest and most
 minimal set of dependencies, while also handling all defined use-cases.
 
 * Distributed, versioned object storage (i.e.
