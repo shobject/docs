@@ -66,19 +66,22 @@ Shoulders of Giants
 To do this, `shobject` itself will build upon tried-and-test platforms.
 Part of the initial challenge will be choosing the smallest and most
 minimal set of dependencies, while also handling all defined use-cases.
+(Canidate technologies are listed. Lists are not final, but represent
+projects that have a following, and except for cjdns, are in wide-spread
+use.)
 
-* Distributed, versioned object storage (i.e.
+* Distributed, versioned object storage (e.g.
   [git](https://git-scm.com/),
   [mercurial](https://www.mercurial-scm.org/),
   [fossil](https://www.fossil-scm.org/))
-* Networking (i.e. [0mq](http://zeromq.org/),
+* Networking (e.g. [0mq](http://zeromq.org/),
   [CJDNS](https://github.com/cjdelisle/cjdns))
-* Distributed Hash Table (i.e. [BitTorrent](http://www.bittorrent.org/))
-* Authentication and Encryption (i.e.
+* Distributed Hash Table (e.g. [BitTorrent](http://www.bittorrent.org/))
+* Authentication and Encryption (e.g.
   [OpenSSL](https://www.openssl.org/), [NaCL](https://nacl.cr.yp.to/))
-* Common types of objects predefiend (i.e.
+* Common types of objects predefiend (e.g.
   [Schema.org](http://schema.org/)) and serialization for said common
-  types (i.e.
+  types (e.g.
   [ProtcolBuffers](https://developers.google.com/protocol-buffers/),
   [Thrift](https://thrift.apache.org/), [BSON](http://bsonspec.org/),
   [JSON](http://www.json.org/), [XML](https://www.w3.org/XML/))
