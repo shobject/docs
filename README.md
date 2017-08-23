@@ -66,16 +66,16 @@ Shoulders of Giants
 To do this, `shobject` itself will build upon tried-and-test platforms.
 Part of the initial challenge will be choosing the smallest and most
 minimal set of dependencies, while also handling all defined use-cases.
-(Canidate technologies are listed. Lists are not final, but represent
-projects that have a following, and except for cjdns, are in wide-spread
-use.)
+(Candidate technologies are listed. Lists are not final, but represent
+projects that have a following, and except for distributed networking,
+are in wide-spread use.)
 
 * Distributed, versioned object storage (e.g.
   [git](https://git-scm.com/),
   [mercurial](https://www.mercurial-scm.org/),
   [fossil](https://www.fossil-scm.org/))
-* Networking (e.g. [0mq](http://zeromq.org/),
-  [CJDNS](https://github.com/cjdelisle/cjdns))
+* Networking (e.g. [0mq](http://zeromq.org/), [mdns](http://www.multicastdns.org/), [DNS-SD](http://www.dns-sd.org/))
+* Peer-to-peer networking (e.g. [CJDNS](https://github.com/cjdelisle/cjdns), [GNUnet](https://gnunet.org/))
 * Distributed Hash Table (e.g. [BitTorrent](http://www.bittorrent.org/))
 * Authentication and Encryption (e.g.
   [OpenSSL](https://www.openssl.org/), [NaCL](https://nacl.cr.yp.to/))
@@ -94,3 +94,14 @@ situations without re-writing the world every time. For instance, if my
 spouse and I both update someone's contact info, say I their birthday
 and they their new address, the application, not `shobject` should
 handle the merge.
+
+Initial Outline
+===============
+
+* Command line: Store/update contacts locally
+* Command line: Store/update calendar locally
+* Command line: Manually initiate contacts sync over local network
+* Command line: Manually initiate calendar sync over local network
+* Command line: Automatically sync contacts over local network on change
+* Android: Calendar provider with manual sync over local network
+* Android: Calendar provider with automatic sync on change
