@@ -31,6 +31,12 @@ by empowering individuals to more closely decide how their data is
 stored and cared for, while not also removing the ability for people to
 lean on vendors to help them with tasks they can't and don't want to do.
 
+Overarching Goal
+================
+
+Defaults should be safe, and reasonable. There should be very few knobs.
+It should be possible to build most application
+
 Sample Vision
 =============
 
@@ -70,21 +76,13 @@ minimal set of dependencies, while also handling all defined use-cases.
 projects that have a following, and except for distributed networking,
 are in wide-spread use.)
 
-* Distributed, versioned object storage (e.g.
-  [git](https://git-scm.com/),
-  [mercurial](https://www.mercurial-scm.org/),
-  [fossil](https://www.fossil-scm.org/))
+* Distributed, versioned object storage (e.g. [git](https://git-scm.com/))
 * Networking (e.g. [0mq](http://zeromq.org/), [mdns](http://www.multicastdns.org/), [DNS-SD](http://www.dns-sd.org/))
-* Peer-to-peer networking (e.g. [CJDNS](https://github.com/cjdelisle/cjdns), [GNUnet](https://gnunet.org/))
-* Distributed Hash Table (e.g. [BitTorrent](http://www.bittorrent.org/))
 * Authentication and Encryption (e.g.
-  [OpenSSL](https://www.openssl.org/), [NaCL](https://nacl.cr.yp.to/), [Noise](http://noiseprotocol.org/))
+  [OpenSSL](https://www.openssl.org/), [Signal Protocol](https://whispersystems.org/docs/))
 * Common types of objects predefiend (e.g.
   [Schema.org](http://schema.org/)) and serialization for said common
-  types (e.g.
-  [ProtcolBuffers](https://developers.google.com/protocol-buffers/),
-  [Thrift](https://thrift.apache.org/), [BSON](http://bsonspec.org/),
-  [JSON](http://www.json.org/), [XML](https://www.w3.org/XML/))
+  types (e.g. [JSON](http://www.json.org/)/[JSON-LD](https://json-ld.org/))
 
 Some ideas
 ==========
@@ -92,17 +90,27 @@ Some ideas
 Provide hooks for application writers to handle errors and other
 situations without re-writing the world every time. For instance, if my
 spouse and I both update someone's contact info, say I their birthday
-and they their new address, the application, not `shobject` should
+and they their new address, the application, not `shobject`, should
 handle the merge.
 
-Initial Outline
-===============
+Initial PoC Outline
+===================
 
 * Command line: Store/update contacts locally
-* Command line: Store/update calendar locally
-* Command line: Manually initiate contacts sync over local network
-* Command line: Manually initiate calendar sync over local network
 * Command line: Automatically sync contacts over local network on change
-* Android: Calendar provider with manual sync over local network
-* Android: Calendar provider with automatic sync on change
+ * Find Other peers
+ * Key exchange / validation
+ * Listen for changes
+ * Publish changes
+* Android: Contact provider with automatic sync on change
 
+Longer-term PoC Outline
+=======================
+
+All PoC examples will be written for Linux and Android
+
+* Contacts
+* Calendar
+* Textual notes
+* Files
+* Steam initiation
